@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <link rel="stylesheet" href="output.css">
+
+    <title>Go Read - Ebook App</title>
+</head>
+<body>
+    <div id="main" class="relative flex flex-col gap-6 max-w-[640px] w-full mx-auto bg-[#03314B] overflow-hidden">
+        <nav class="w-full">
+            <div class="flex items-center justify-between p-6">
+                <div class="flex">
+                    <img src="assets/images/icons/burger-menu.svg" class="w-6 h-6" alt="icon">
+                </div>
+                <div class="w-[102px] h-[33px] shrink-0 overflow-hidden">
+                    <img src="assets/images/logos/logo.svg" class="w-full h-full object-cover" alt="logo">
+                </div>
+                <div class="flex">
+                    <img src="assets/images/icons/search.svg" class="w-6 h-6" alt="icon">
+                </div>
+            </div>
+            <div class="w-full border border-goread-blue/5"></div>
+        </nav>
+        <div class="flex flex-col gap-[34px] overflow-hidden w-full pb-[50px]">
+            <section id="recent-book" class="flex flex-col gap-[14px]">
+                <div class="flex items-center justify-between px-[24px]">
+                    <h2 class="font-semibold text-[18px]">Recent Book</h2>
+                    <a href="#" class="text-[12px] text-goread-blue">View All</a>
+                </div>
+                <div class="flex gap-[14px] items-center px-[24px]">
+                    <div class="w-[80px] h-[110px] shrink-0 overflow-hidden rounded-[4px]">
+                        <img src="assets/images/thumbnails/atomic-habits.png" class="w-full h-full object-cover" alt="thumbnail">
+                    </div>
+                    <div class="flex flex-col gap-[43px] justify-between w-full">
+                        <div class="flex flex-col gap-[2px]">
+                            <h3 class="font-medium">Atomic Habits</h3>
+                            <p class="text-[12px] text-goread-blue">James Clear</p>
+                        </div>
+                        <div class="flex flex-col gap-[2px]">
+                            <div class="flex justify-between w-full">
+                                <p class="text-goread-blue text-[10px]">Pages 178/356</p>
+                                <p class="text-goread-blue text-[10px]">50%</p>
+                            </div>
+                            <div class="w-full h-[6px] rounded-[2px]">
+                                <img src="assets/images/components/progress-bar.svg" class="w-full h-full object-cover" alt="components">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="popular-books" class="flex flex-col gap-[14px]">
+                <div class="flex items-center justify-between px-[24px]">
+                    <h2 class="font-semibold text-[18px]">Popular Books</h2>
+                    <a href="#" class="text-[12px] text-goread-blue">View All</a>
+                </div>
+                <div class="swiper-books overflow-hidden">
+                    <div class="swiper-wrapper flex items-center w-full">
+                        <a href="#" class="swiper-slide w-fit gap-[1px]">
+                            <div class="flex flex-col gap-[14px]">
+                                <div class="w-[140px] h-[200px] shrink-0 overflow-hidden rounded-[6px]">
+                                    <img src="assets/images/thumbnails/guy-kawasaki.png" class="w-full h-full object-cover" alt="thumbnail">
+                                </div>
+                                <div class="flex flex-col gap-[2px]">
+                                    <p class="font-medium">Enchantment</p>
+                                    <p class="font-medium text-[12px] text-goread-blue">Guy Kawasaki</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="swiper-slide w-fit gap-[1px]">
+                            <div class="flex flex-col gap-[14px]">
+                                <div class="w-[140px] h-[200px] shrink-0 overflow-hidden rounded-[6px]">
+                                    <img src="assets/images/thumbnails/atomic-habits.png" class="w-full h-full object-cover" alt="thumbnail">
+                                </div>
+                                <div class="flex flex-col gap-[2px]">
+                                    <p class="font-medium">Enchantment</p>
+                                    <p class="font-medium text-[12px] text-goread-blue">Guy Kawasaki</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="swiper-slide w-fit gap-[1px]">
+                            <div class="flex flex-col gap-[14px]">
+                                <div class="w-[140px] h-[200px] shrink-0 overflow-hidden rounded-[6px]">
+                                    <img src="assets/images/thumbnails/world-lore.png" class="w-full h-full object-cover" alt="thumbnail">
+                                </div>
+                                <div class="flex flex-col gap-[2px]">
+                                    <p class="font-medium">Enchantment</p>
+                                    <p class="font-medium text-[12px] text-goread-blue">Guy Kawasaki</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="swiper-slide w-fit gap-[1px]">
+                            <div class="flex flex-col gap-[14px]">
+                                <div class="w-[140px] h-[200px] shrink-0 overflow-hidden rounded-[6px]">
+                                    <img src="assets/images/thumbnails/guy-kawasaki.png" class="w-full h-full object-cover" alt="thumbnail">
+                                </div>
+                                <div class="flex flex-col gap-[2px]">
+                                    <p class="font-medium">Enchantment</p>
+                                    <p class="font-medium text-[12px] text-goread-blue">Guy Kawasaki</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="swiper-slide w-fit gap-[1px]">
+                            <div class="flex flex-col gap-[14px]">
+                                <div class="w-[140px] h-[200px] shrink-0 overflow-hidden rounded-[6px]">
+                                    <img src="assets/images/thumbnails/atomic-habits.png" class="w-full h-full object-cover" alt="thumbnail">
+                                </div>
+                                <div class="flex flex-col gap-[2px]">
+                                    <p class="font-medium">Enchantment</p>
+                                    <p class="font-medium text-[12px] text-goread-blue">Guy Kawasaki</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="swiper-slide w-fit gap-[1px]">
+                            <div class="flex flex-col gap-[14px]">
+                                <div class="w-[140px] h-[200px] shrink-0 overflow-hidden rounded-[6px]">
+                                    <img src="assets/images/thumbnails/world-lore.png" class="w-full h-full object-cover" alt="thumbnail">
+                                </div>
+                                <div class="flex flex-col gap-[2px]">
+                                    <p class="font-medium">Enchantment</p>
+                                    <p class="font-medium text-[12px] text-goread-blue">Guy Kawasaki</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section id="recent-book" class="flex flex-col gap-[14px]">
+                <div class="flex items-center justify-between px-[24px]">
+                    <h2 class="font-semibold text-[18px]">Recent Book</h2>
+                    <a href="#" class="text-[12px] text-goread-blue">View All</a>
+                </div>
+                <div class="flex gap-[14px] items-center px-[24px]">
+                    <div class="w-[60px] h-[80px] shrink-0 overflow-hidden rounded-[4px]">
+                        <img src="assets/images/thumbnails/mark-manson.png" class="w-full h-full object-cover" alt="thumbnail">
+                    </div>
+                    <div class="flex flex-col gap-[12px] justify-between w-full">
+                        <div class="flex flex-col gap-[2px] h-[44px]">
+                            <h3 class="font-medium line-clamp-1">Sebuah Seni Untuk Bersikap Bodo Amat</h3>
+                            <p class="text-[12px] text-goread-blue">Mark Manson</p>
+                        </div>
+                        <div class="w-[102px] h-[18px] rounded-[2px]">
+                            <img src="assets/images/icons/ratings.svg" class="w-full h-full object-cover" alt="components">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+</body>
+</html>
